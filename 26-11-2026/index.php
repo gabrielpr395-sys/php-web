@@ -28,7 +28,7 @@
             $altura = 1.75;
 
             // Variável do tipo boolen
-            $estudante = false;
+            $estudante = true;
             ?>
 
             <p>
@@ -75,6 +75,56 @@
             <p><strong>Resultado: </strong> <?= $resultado?></p>
 
         </div>
+
+        <div class="card">
+            <h2>Pode entrar na festa?</h2>
+
+            <?php
+            //ENtrada de dados
+            $nome = "Scooby";
+            $idade = 67;
+
+            //Verifica se a pessias pode entrar na festa
+            if ($idade >= 18) {
+                $acesso = "Entrada Liberada! Diverta-se e aproveite com moderação!";
+            } else {
+                $acesso = "Entrada Negada!";
+            }
+            ?>
+
+            <p><strong>Nome: </strong> <?= $nome?></p>
+            <p><strong>Idade: </strong> <?= $idade?></p>
+            <p><strong>Acesso: </strong> <?= $acesso?></p>
+
+        </div>
+
+        <div class="card">
+            <h2>Suspensão do Jogador</h2>
+
+            <?php
+            //Dados do jogador
+            $nome = "Luca Infãme";
+            $cartoes = -1;
+
+            // 3 catões amarelos ou mais = suspenso, ou seja, status do jogador na partida
+            if ($cartoes >= 3) {
+                $status = "Suspenso do jogo!";
+            } else {
+                $status = "Continua no jogo!";
+            }
+            ?>
+
+            <p><strong>Jogador: </strong> <?= $nome?></p>
+            <p><strong>Cartões: </strong> <?= $cartoes?></p>
+            <p><strong>Status: </strong> <?= $status?></p>
+
+        </div>
+
+
+
+
+
+
 
     </main>
     
