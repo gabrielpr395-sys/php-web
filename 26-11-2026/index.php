@@ -60,13 +60,19 @@
 
             <?php
                 //Entrada da nota do Aluno
-                $nota = 8;
+                $nota = 6;
 
+                // Verifica de o aluno foi aprovado
+                if ($nota >= 7) {
+                    $resultado = "Aprovado";
+                } else {
+                    $resultado = "Reprovado";
+                }
             ?>
 
-
-            <?= $nota ?>
-            <?= ?>
+            <p><strong>Aluno: </strong> <?= $nome?></p>
+            <p><strong>Nota do Aluno: </strong> <?= $nota?></p>
+            <p><strong>Resultado: </strong> <?= $resultado?></p>
 
         </div>
 
